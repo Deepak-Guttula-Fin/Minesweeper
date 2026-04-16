@@ -1,0 +1,46 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #1e1e2f;
+    color: white;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    gap: 2px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background: #2a2a40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.cell.revealed {
+    background: #444;
+}
+
+.cell.mine {
+    background: red;
+}
+
+.cell.flag {
+    background: orange;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #00ffaa;
+    cursor: pointer;
+    border-radius: 5px;
+}
